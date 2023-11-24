@@ -1,0 +1,13 @@
+scipy
+numpy
+tqdm
+matplotlib
+imageio
+
+scikit-learn
+opencv-python
+opencv-contrib-python
+
+torch
+torchvision
+tensorboard
