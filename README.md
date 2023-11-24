@@ -6,7 +6,7 @@
 Accurate and automated segmentation of intervertebral discs (IVDs) in medical images is crucial for assessing spine-related disorders, such as osteoporosis, vertebral fractures, or IVD herniation. We present HCA-Net, a novel contextual attention network architecture for semantic labeling of IVDs, with a special focus on exploiting prior geometric information. Our approach excels at processing features across different scales and effectively consolidating them to capture the intricate spatial relationships within the spinal cord. To achieve this, HCA-Net models IVD labeling as a pose estimation problem, aiming to minimize the discrepancy between each predicted IVD location and its corresponding actual joint location. In addition, we introduce a skeletal loss term to reinforce the model's geometric dependence on the spine. This loss function is designed to constrain the model's predictions to a range that matches the general structure of the human vertebral skeleton. As a result, the network learns to reduce the occurrence of false predictions and adaptively improves the accuracy of IVD location estimation. Through extensive experimental evaluation on multi-center spine datasets, our approach consistently outperforms previous state-of-the-art methods on both MRI T1w and T2w modalities.
 
 <div align="center" float="left">
-  <img width="400" alt="HCA-Net" src="https://github.com/xmindflow/HCA-Net/assets/6207884/49c9e0e8-d80d-4c15-9686-e1f0ae4d0092">
+  <img width="400" alt="HCA-Net" src="https://github.com/xmindflow/HCA-Net/assets/6207884/e7deea85-4076-4158-8926-15387e6da06c">
   <br>
   Caption: Structure of the proposed HCA-Net method for IVD semantic labeling
 </div>
@@ -58,9 +58,9 @@ python src/main.py -mode "test"  --name "v01" --modality "t1"
 
 ## Experimental Results
 <p align="center">
-  <img width="900" alt="image" src="https://github.com/xmindflow/HCA-Net/assets/6207884/1195d13c-4f63-4b58-b644-c3c5d654d07e">
+  <img width="900" alt="image" src="https://github.com/xmindflow/HCA-Net/assets/6207884/0e6cb948-39fb-4e54-b97c-dfbcc447180a">
   <br>
-  <img width="900" alt="image" src="https://github.com/xmindflow/HCA-Net/assets/6207884/f82cd0d2-02b1-4bb1-bb07-0d615af7f5eb">
+  <img width="900" alt="image" src="https://github.com/xmindflow/HCA-Net/assets/6207884/144f9282-5e18-4eab-b8dd-03c98b0ac34c">
 </p>
 
 A notable illustration of intervertebral disc semantic detection and labeling in the test dataset is shown in the T1w (first row) and T2w MRI modalities (second row). In the first column, the network input is showcased, the second column displays the ground truth, and the third and final column exhibits the outcome of the last `out` block.
@@ -68,7 +68,7 @@ A notable illustration of intervertebral disc semantic detection and labeling in
 <hr>
 
 <p align="center">
-  <img width="900" alt="image" src="https://github.com/xmindflow/HCA-Net/assets/6207884/b2063058-876b-46dc-9ba5-c6c7bf91e492">
+  <img width="900" alt="experimental result table" src="https://github.com/xmindflow/HCA-Net/assets/6207884/4898ab54-a38a-41ec-ad87-e7845013f15b">
   <br>
 <!-- Intervertebral disc semantic labeling on the spine generic public dataset. DTT indicates the Distance To the Target -->
 </p>
@@ -76,7 +76,7 @@ A notable illustration of intervertebral disc semantic detection and labeling in
 <hr>
 
 <p align="center">
-  <img width="700" alt="image" src="https://github.com/xmindflow/HCA-Net/assets/6207884/d0511948-bfeb-44ed-983e-6c13543e3063">
+  <img width="700" alt="results" src="https://github.com/xmindflow/HCA-Net/assets/6207884/6fa422e9-226e-4a5c-879e-4b44ace8d988">
   <br>
   Comparison of results on T1w (a-b) and T2w (c-d) MRI modalities between the proposed HCA-Net (b and d) and the pose estimation method [13] (a and c). Green dots denote ground truth.
 </p>
