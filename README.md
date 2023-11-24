@@ -54,18 +54,31 @@ python src/main.py -mode "test"  --name "v01" --modality "t1"
 ```
 
 > Note: _To achieve the best result, consider all possible disk points per channel (final `out` block) then use [this link](https://github.com/rezazad68/intervertebral-lookonce) for post-processing to obtain the final skeleton for evaluation._
+>
 
 ## Experimental Results
 <p align="center">
+  <img width="900" alt="image" src="https://github.com/xmindflow/HCA-Net/assets/6207884/1195d13c-4f63-4b58-b644-c3c5d654d07e">
+  <br>
+  <img width="900" alt="image" src="https://github.com/xmindflow/HCA-Net/assets/6207884/f82cd0d2-02b1-4bb1-bb07-0d615af7f5eb">
+</p>
+
+A notable illustration of intervertebral disc semantic detection and labeling in the test dataset is shown in the T1w (first row) and T2w MRI modalities (second row). In the first column, the network input is showcased, the second column displays the ground truth, and the third and final column exhibits the outcome of the last `out` block.
+
+<hr>
+
+<p align="center">
   <img width="900" alt="image" src="https://github.com/xmindflow/HCA-Net/assets/6207884/b2063058-876b-46dc-9ba5-c6c7bf91e492">
   <br>
-  Caption: Intervertebral disc semantic labeling on the spine generic public dataset. DTT indicates the Distance To the Target
+<!-- Intervertebral disc semantic labeling on the spine generic public dataset. DTT indicates the Distance To the Target -->
 </p>
-<br>
+
+<hr>
+
 <p align="center">
   <img width="700" alt="image" src="https://github.com/xmindflow/HCA-Net/assets/6207884/d0511948-bfeb-44ed-983e-6c13543e3063">
   <br>
-  Caption: Comparison of results on T1w (a-b) and T2w (c-d) MRI modalities between the proposed HCA-Net (b and d) and the pose estimation method [13] (a and c). Green dots denote ground truth.
+  Comparison of results on T1w (a-b) and T2w (c-d) MRI modalities between the proposed HCA-Net (b and d) and the pose estimation method [13] (a and c). Green dots denote ground truth.
 </p>
 
 ## Citation
@@ -85,4 +98,3 @@ If you find HCA-Net useful for your work, please consider citing us:
 ## References
 - Deep Intervertebral Disc Labeling [https://github.com/rezazad68/Deep-Intervertebral-Disc-Labeling]
 - Intervertebral Lookonce [https://github.com/rezazad68/intervertebral-lookonce]
-```
